@@ -426,17 +426,25 @@
     "top_level_sheets": [
       {
         "filename": "Untitled.kicad_sch",
-        "name": "Untitled",
+        "name": "Root",
         "uuid": "ff3f6c56-af5f-41ca-b3f6-fd555f00a2a6"
       }
     ],
-    "used_designators": "#PWR1-2,U1-2",
+    "used_designators": "#PWR1-18,A_HS1-2,A_LS1-2,Bootloader_SW1,C1-9,D1,FB1,J1,L1,M1,Q1-6,R1-3,SW1,U1-4",
     "variants": []
   },
   "sheets": [
     [
       "ff3f6c56-af5f-41ca-b3f6-fd555f00a2a6",
-      "Untitled"
+      "Root"
+    ],
+    [
+      "1b2099fd-7304-4dd4-a2bc-064fa887adba",
+      "Power"
+    ],
+    [
+      "32364cb6-c8e7-4976-a5e5-64ef5358d314",
+      "MCU"
     ]
   ],
   "text_variables": {},

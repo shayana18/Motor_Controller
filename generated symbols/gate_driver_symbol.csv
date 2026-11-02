@@ -1,0 +1,28 @@
+gate_driver_symbol
+Reference:,U
+Footprint:,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm
+Datasheet:,https://www.ti.com/lit/ds/symlink/drv8300.pdf
+Description:,DRV8300DPWR - 100-V Three-Phase BLDC Gate Driver (TSSOP-20)
+MPN:,DRV8300DPWR
+Manufacturer:,Texas Instruments
+pin,name,type,side,style
+1,INHA,input,left,line
+2,INHB,input,left,line
+3,INHC,input,left,line
+4,INLA,input,left,line
+5,INLB,input,left,line
+6,INLC,input,left,line
+7,GVDD,power_in,top,line
+8,GND,power_in,bottom,line
+20,BSTA,output,right,line
+19,GHA,output,right,line
+18,SHA,passive,right,line
+11,GLA,output,right,line
+17,BSTB,output,right,line
+16,GHB,output,right,line
+15,SHB,passive,right,line
+10,GLB,output,right,line
+14,BSTC,output,right,line
+13,GHC,output,right,line
+12,SHC,passive,right,line
+9,GLC,output,right,line
