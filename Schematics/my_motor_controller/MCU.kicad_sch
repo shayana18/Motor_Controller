@@ -2312,16 +2312,6 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 55.88) (xy 177.8 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ff1fb04-10f1-42d8-9b19-fa684d8617c5")
-	)
-	(wire
-		(pts
 			(xy 49.53 27.94) (xy 50.8 27.94)
 		)
 		(stroke
@@ -2339,16 +2329,6 @@
 			(type default)
 		)
 		(uuid "41042f05-f13b-4b1c-81f7-62dc5f58d0e1")
-	)
-	(wire
-		(pts
-			(xy 177.8 78.74) (xy 181.61 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7158b0ab-6474-47e9-877a-b847905b3fb0")
 	)
 	(wire
 		(pts
@@ -2379,16 +2359,6 @@
 			(type default)
 		)
 		(uuid "9f49f90d-98bf-4ec6-8502-4779978a9591")
-	)
-	(wire
-		(pts
-			(xy 177.8 63.5) (xy 181.61 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5385944-8b96-4137-afa2-f8082735ef16")
 	)
 	(wire
 		(pts
@@ -2439,26 +2409,6 @@
 			(type default)
 		)
 		(uuid "b85b1914-e27d-4aaf-8c07-470d1eb4d7a9")
-	)
-	(wire
-		(pts
-			(xy 177.8 76.2) (xy 181.61 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2c1b343-89e7-4b5c-857c-2f5712542e27")
-	)
-	(wire
-		(pts
-			(xy 177.8 60.96) (xy 181.61 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c34ff177-9270-4d63-bfb4-91cfa02019c7")
 	)
 	(wire
 		(pts
@@ -2540,6 +2490,30 @@
 		)
 		(uuid "fa4ea5a4-9c48-4264-8780-7698ffad3646")
 	)
+	(global_label "UART3_Laptop_TX"
+		(shape input)
+		(at 142.24 109.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "215f3a93-95b6-42cc-95ee-937f56489d04")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 122.9265 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "BOOT0"
 		(shape input)
 		(at 29.21 30.48 180)
@@ -2564,9 +2538,57 @@
 			)
 		)
 	)
+	(global_label "I2C1_Encoder_SCL"
+		(shape input)
+		(at 177.8 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2a6daa55-9bc0-42d3-a4ca-043c3db79ff9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.0812 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "CURR_SENSE_B_-"
+		(shape input)
+		(at 177.8 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "30ae54ff-d3fd-4d19-beb5-d87d3c06631c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 197.7184 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "Status_LED"
 		(shape input)
-		(at 181.61 55.88 0)
+		(at 177.8 55.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2576,7 +2598,55 @@
 		)
 		(uuid "3255b474-08cf-4817-840f-32b1bc7eda83")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.9969 55.88 0)
+			(at 191.1869 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "I2C1_Encoder_SDA"
+		(shape input)
+		(at 142.24 101.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "370b05e4-d2e6-4db2-a936-756984f590af")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.8983 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "CURR_SENSE_A_-"
+		(shape input)
+		(at 177.8 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "37dd6042-1d32-4a8f-82d5-def6ad617e5b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 197.537 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2612,6 +2682,78 @@
 			)
 		)
 	)
+	(global_label "S_LA"
+		(shape input)
+		(at 177.8 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3eb06aaa-a66c-40f3-abf6-f69f22b59339")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.079 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "PWM_LCC"
+		(shape input)
+		(at 142.24 121.92 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "42270f5a-fc92-411d-ad57-2faeb13f98e3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 130.5463 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "PWM_LSA"
+		(shape input)
+		(at 142.24 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "527f6bcc-aec6-4117-8a01-a67e69accd6c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 130.7882 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "SWDIO"
 		(shape input)
 		(at 181.61 88.9 0)
@@ -2625,30 +2767,6 @@
 		(uuid "56bc25a8-8451-4ade-a5ba-7127f821cac8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 190.4614 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "I2C2_Encoder_SCL"
-		(shape input)
-		(at 181.61 78.74 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5bdfc7f9-82e3-42bf-bc8b-e27ceda113fa")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.8912 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2684,6 +2802,78 @@
 			)
 		)
 	)
+	(global_label "PWM_HSB"
+		(shape input)
+		(at 177.8 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ae635969-b27e-4833-8cde-cb0f2fc695ce")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.7356 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "S_LC"
+		(shape input)
+		(at 142.24 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "afcff0f6-1ace-4cb7-9aad-9cd47ece2d5c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 134.7796 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "UART3_Laptop_RX"
+		(shape input)
+		(at 142.24 111.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b0141f55-115c-47ca-9319-41294121514f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 122.6241 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "NRST"
 		(shape input)
 		(at 137.16 60.96 180)
@@ -2708,9 +2898,9 @@
 			)
 		)
 	)
-	(global_label "UART2_Laptop_TX"
+	(global_label "S_LB"
 		(shape input)
-		(at 181.61 60.96 0)
+		(at 177.8 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2718,9 +2908,9 @@
 			)
 			(justify left)
 		)
-		(uuid "b8a4c438-3f89-4513-a1c6-6269b5813f5a")
+		(uuid "b5532ea9-ad02-4967-8be7-ea8e723d2d6b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 200.9235 60.96 0)
+			(at 185.2604 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2732,9 +2922,57 @@
 			)
 		)
 	)
-	(global_label "UART2_Laptop_RX"
+	(global_label "PWM_LSB"
 		(shape input)
-		(at 181.61 63.5 0)
+		(at 142.24 119.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c8067ede-ba03-4c1d-b9f1-3f0fad0a512f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 130.6068 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "CURR_SENSE_C_-"
+		(shape input)
+		(at 142.24 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dcaacb96-8d6f-479d-8cf6-f3eb36b27462")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 122.3216 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "PWM_HSC"
+		(shape input)
+		(at 177.8 81.28 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2742,9 +2980,9 @@
 			)
 			(justify left)
 		)
-		(uuid "cfc6f251-33d3-4e70-9fcd-dee08a14d344")
+		(uuid "ee893c67-9f18-4c67-a10b-f3146a00ab47")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.2259 63.5 0)
+			(at 189.7356 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2756,9 +2994,9 @@
 			)
 		)
 	)
-	(global_label "I2C2_Encoder_SDA"
+	(global_label "PWM_HSA"
 		(shape input)
-		(at 181.61 76.2 0)
+		(at 177.8 76.2 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2766,9 +3004,9 @@
 			)
 			(justify left)
 		)
-		(uuid "cff6e9d3-5f77-4cef-9164-8b1d05490cfa")
+		(uuid "f54b630b-0be5-406d-83a5-144a91d83be8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.9517 76.2 0)
+			(at 189.5542 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2993,7 +3231,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_Array_Concave_2x0603"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 34.29 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -3004,7 +3242,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C17414.pdf?spm=wm.sxq.inf.ggs&lcsc_vid=RFELUgEDRlVcBgZXRVBYVlwETwQKAlRSElhWXlZRT1ExVlNfRFFZVVdUQlVbUjsOAxUeFF5JWBYZEEoBGA4JCwFIFA4DSA%3D%3D"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17414.pdf"
 			(at 34.29 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -3048,7 +3286,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 34.29 30.48 90)
 			(hide yes)
 			(show_name no)
@@ -3561,7 +3799,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 254 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -3572,7 +3810,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C22808.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C22808.pdf"
 			(at 254 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -3605,7 +3843,7 @@
 				)
 			)
 		)
-		(property "JLCPCB #" "C22808"
+		(property "JLCPCB Part #" "C22808"
 			(at 254 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -3837,7 +4075,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 254 60.96 90)
 			(hide yes)
 			(show_name no)
@@ -3848,7 +4086,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2290.pdf"
 			(at 254 60.96 90)
 			(hide yes)
 			(show_name no)
@@ -3872,6 +4110,39 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 254 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "KT-0603W"
+			(at 254 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C2290"
+			(at 254 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Hubei KENTO Elec"
+			(at 254 60.96 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

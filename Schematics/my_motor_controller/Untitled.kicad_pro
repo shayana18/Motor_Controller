@@ -430,7 +430,7 @@
         "uuid": "ff3f6c56-af5f-41ca-b3f6-fd555f00a2a6"
       }
     ],
-    "used_designators": "#PWR1-18,A_HS1-2,A_LS1-2,Bootloader_SW1,C1-9,D1,FB1,J1,L1,M1,Q1-6,R1-3,SW1,U1-4",
+    "used_designators": "#PWR1-49,A_HS1-2,A_LS1-2,Bootloader_SW1,C1-74,D1-5,FB1-2,J1,L1-4,M1,Q1-6,R1-37,SW1,U1-6",
     "variants": []
   },
   "sheets": [
@@ -440,11 +440,15 @@
     ],
     [
       "1b2099fd-7304-4dd4-a2bc-064fa887adba",
-      "Power"
+      "motor_driver"
     ],
     [
       "32364cb6-c8e7-4976-a5e5-64ef5358d314",
       "MCU"
+    ],
+    [
+      "5372bc34-6923-478a-80d3-286d4f023243",
+      "Power"
     ]
   ],
   "text_variables": {},
