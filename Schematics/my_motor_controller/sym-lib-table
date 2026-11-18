@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "DRV8300DPWR") (type "KiCad") (uri "/Users/shykizzy/Desktop/Motor Control Project/generated symbols/gate_driver_symbol.kicad_sym") (options "") (descr ""))
+)

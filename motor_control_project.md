@@ -2,7 +2,9 @@
 
 Oct 6, 2026 · revised Oct 13, 2026 · @Shayan
 
-> **Hard dates:** boards ordered by **Friday, November 13**. Board brought up, validated and running the motor under stable closed-loop control by **Thursday, December 10**, the last session before finals; Dec 22 is the absolute latest. From late December into January I'm travelling with the board and **no lab equipment**, so anything that needs a scope, multimeter or bench supply has to be finished before then.
+> **Hard dates:** boards ordered by **Friday, November 27**. Board brought up, validated and running the motor under stable closed-loop control by **Thursday, December 10**, the last session before finals; Dec 22 is the absolute latest. From late December into January I'm travelling with the board and **no lab equipment**, so anything that needs a scope, multimeter or bench supply has to be finished before then.
+>
+> **Schedule change (Nov 12):** board order moved two weeks, from Nov 13 to **Nov 27**, to finish protections, the MCU sheet, layout and routing. Knock-on not yet resolved: boards now arrive around Dec 7–14, so M4 bring-up (planned Dec 1–10) collides with finals (Dec 11–22). M3 and M4 dates below are unchanged until that is decided.
 
 ## Overview
 
@@ -17,7 +19,7 @@ Learning goals, in order:
 ## Schedule
 
 - **Motor Controller Project** sessions: Tuesday, Thursday and Friday, 8:30–10:30. That is 28 sessions (about 56 hours) from October 8 to December 10.
-- **Optional Sunday** block, 10:00–1:00, for catch-up. During the PCB phase (M2), the Sundays on Oct 25, Nov 1 and Nov 8 are planned PCB work, and Nov 15 is the last buffer for the board order.
+- **Optional Sunday** block, 10:00–1:00, for catch-up. During the PCB phase (M2), the Sundays on Oct 25, Nov 1 and Nov 8 are planned PCB work, and Nov 29 is the last buffer for the board order (moved from Nov 15 on Nov 12).
 - **Finals, December 11–22:** no planned sessions. The Sundays on Dec 13 and 20 are emergency-only, for a bring-up measurement that still needs the bench before travel.
 - **Travel, late December to January:** firmware refinements only, using the board's own sensors. No lab equipment.
 - During midterms, drop to two sessions that week and let the Sunday block absorb the difference.
@@ -29,7 +31,7 @@ Learning goals, in order:
 | Milestone | Dates | Sessions | Hours | Was |
 | --- | --- | --- | --- | --- |
 | M1 Foundations: Rustlings, motor control, project fundamentals | Oct 8–22 | 7 | ~14 | 11 sessions, ~22 h, about half embedded Rust |
-| M2 PCB design: electrical fundamentals, chip selection, layout | Oct 23–Nov 13 | 10 + 3 Sundays | ~29 | 6 sessions, ~12 h |
+| M2 PCB design: electrical fundamentals, chip selection, layout | Oct 23–Nov 27 | 10 + 3 Sundays | ~29 | 6 sessions, ~12 h |
 | M3 Firmware on the dev kit, while boards ship | Nov 17–27 | 6 | ~12 | 6 sessions, ~12 h |
 | M4 Bring-up, validation and motor control on the board | Dec 1–10 | 5 | ~10 | 5 sessions, ~10 h |
 | M5 Refinements while travelling, no lab equipment | late Dec–Jan | — | ~12+ | winter break port |
@@ -128,9 +130,9 @@ Three threads run side by side. Motor control fundamentals are largely done alre
 - **Moved out of M1:** the Embedded Rust Book sessions. They're learned just in time in M3, while writing the drivers.
 - **Resources:** [Rustlings](https://github.com/rust-lang/rustlings), [The Rust Programming Language](https://doc.rust-lang.org/book/), Brian Douglas's control lectures (YouTube), TI and ST application notes introducing BLDC/PMSM and FOC.
 
-### M2 — PCB design (Oct 23–Nov 13, 10 sessions plus 3 Sundays, ~29 h)
+### M2 — PCB design (Oct 23–Nov 27, 10 sessions plus 3 Sundays, ~29 h)
 
-Four phases, each ending with something written down. Every phase uses LTspice or a quick calculation to check the numbers. The order date is fixed by the December 10 bring-up target: an assembled 4-layer board takes roughly one to two weeks from order to door with express shipping, so a Nov 13 order lands around Nov 23–30, in time for bring-up on Dec 1.
+Four phases, each ending with something written down. Every phase uses LTspice or a quick calculation to check the numbers. The order date is fixed by the December 10 bring-up target: an assembled 4-layer board takes roughly one to two weeks from order to door with express shipping, so a Nov 27 order lands around Dec 7–14. That no longer fits bring-up on Dec 1 (see the schedule change note at the top).
 
 **Phase A — Electrical fundamentals (Oct 23–29, 3 sessions + Sun Oct 25)**
 
@@ -145,8 +147,8 @@ Four phases, each ending with something written down. Every phase uses LTspice o
 **Phase B — Choosing the parts (Oct 30–Nov 3, 2 sessions + Sun Nov 1)**
 
 - **MCU:** compare the STM32G431 and STM32G474 (and an RP2350 as the counterexample). The things that matter for motor control: an advanced timer with complementary outputs and hardware dead time, a break input, fast ADCs triggered by the timer, on-chip op-amps and comparators, CORDIC for FOC math, and a clear reference manual and Rust PAC (register-access crate), since you're writing the drivers yourself. **Decided (Oct 14): STM32G431RBT6** (LQFP64, 128 KB flash), the same chip as the Nucleo-G431RB, so dev-kit firmware ports directly.
-- **Gate driver and power stage:** compare an integrated-FET driver (e.g. TI DRV8316: simpler layout, fewer decisions) with a gate driver plus discrete MOSFETs (e.g. TI DRV8323, which has built-in current-sense amplifiers). Default: **gate driver plus discrete MOSFETs**, because sizing FETs, gate resistors and bootstrap caps and laying out the power loop is the electrical learning you want, and it's how EV and robot inverters are built. Because the board has to work first time for the Dec 10 target, make this call firmly at the end of Phase B (Nov 3): if the discrete design isn't clearly understood by then, switch to the integrated part. A working board you can travel with beats a more educational one that needs a rev B.
-- **The rest:** MOSFETs (voltage margin, Rds(on), gate charge, package), shunt values and power rating, the position sensor interface (hall, quadrature or SPI magnetic encoder), the buck regulator, USB-C protection.
+- **Gate driver and power stage:** compare an integrated-FET driver (e.g. TI DRV8316: simpler layout, fewer decisions) with a gate driver plus discrete MOSFETs (e.g. TI DRV8323, which has built-in current-sense amplifiers). Default: **gate driver plus discrete MOSFETs**, because sizing FETs, gate resistors and bootstrap caps and laying out the power loop is the electrical learning you want, and it's how EV and robot inverters are built. Because the board has to work first time for the Dec 10 target, make this call firmly at the end of Phase B (Nov 3): if the discrete design isn't clearly understood by then, switch to the integrated part. A working board you can travel with beats a more educational one that needs a rev B. **Decided (Oct 29): TI DRV8300DPWR** (100 V three-phase bootstrap gate driver, TSSOP-20, integrated bootstrap diodes, non-inverted inputs) with six discrete N-channel MOSFETs.
+- **The rest:** MOSFETs (voltage margin, Rds(on), gate charge, package), shunt values and power rating, the position sensor interface (hall, quadrature or SPI magnetic encoder), the buck regulator, USB-C protection. **Power tree decided (Oct 29):** two TPS5430DDAR bucks in parallel from the 24 V input (JLCPCB Basic C9864, 5.5–36 V in, 40 V abs max, 500 kHz, async with a 40 V Schottky): 24 V → 3.3 V for the MCU, analog and encoder, and 24 V → 12 V for the DRV8300 gate supply. No LDOs. The input TVS must clamp below the TPS5430's 40 V absolute max (SMBJ24A class).
 - For each part: read the datasheet's reference design and layout guidance, check it's in stock and assemblable at the board house.
 - **Done when:** block diagram v1, BOM v0 with a one-line reason per major part, and a power budget per rail.
 
@@ -154,15 +156,15 @@ Four phases, each ending with something written down. Every phase uses LTspice o
 
 - Stackups and why a 4-layer board with a solid ground plane is worth it here; return paths; separating the high-current power loop from analog sensing; Kelvin connections on the shunts; trace width for current; creepage and clearance at your voltage.
 - KiCad schematic: hierarchical sheets for power, MCU, inverter, sensing and connectors; ERC; footprint assignment against the board house's parts library.
-- **Schematic checklist:** 24 V-max input with reverse-polarity protection, buck to 3.3 V, STM32G431, USB-C (CC resistors, ESD) feeding a USB-to-UART bridge chip so the Mac talks to the MCU's UART and no USB driver is needed, three-phase inverter sized from M1's current, phase current sensing with filters, current-sense output to a G4 comparator for the hardware trip, NTC beside the FETs, position sensor connector, button, LED, buzzer, SWD header, a spare GPIO on a test pad for loop timing, and test points on every rail and key signal.
+- **Schematic checklist:** 24 V-max input with reverse-polarity protection, TPS5430 bucks to 3.3 V and 12 V (gate supply), STM32G431, USB-C (CC resistors, ESD) feeding a USB-to-UART bridge chip so the Mac talks to the MCU's UART and no USB driver is needed, three-phase inverter sized from M1's current, phase current sensing with filters, current-sense output to a G4 comparator for the hardware trip, NTC beside the FETs, position sensor connector, button, LED, buzzer, SWD header, a spare GPIO on a test pad for loop timing, and test points on every rail and key signal.
 - **Done when:** the schematic passes ERC and a self-review against the reference designs.
 
-**Phase D — Layout, review, order (Nov 10–13, 3 sessions)**
+**Phase D — Layout, review, order (Nov 13–27)**
 
 - Placement first (power stage, then sensing, then MCU), the power loop as tight as possible, then routing, ground pour, stitching vias, silkscreen and test points.
 - DRC, a written checklist review, the board house's DFM check, and a 3D view check of connectors and the motor wiring.
 - **Design for bring-up:** test points and a series 0 Ω link or jumper on each rail so they can be powered one at a time, an LED on each rail, gate-drive signals on probe-able pads, and a phase-current or fault readout over USB so the board can report its own health later without a meter.
-- **Done when:** boards are ordered with assembly and express shipping by **Friday, November 13** (Sunday, Nov 15 at the very latest), together with a written bring-up plan listing the expected value for every rail and signal. Order at least 3 assembled boards, so a damaged board during bring-up isn't the end of the travel plan.
+- **Done when:** boards are ordered with assembly and express shipping by **Friday, November 27** (Sunday, Nov 29 at the very latest), together with a written bring-up plan listing the expected value for every rail and signal. Order at least 3 assembled boards, so a damaged board during bring-up isn't the end of the travel plan.
 - **Resources:** Phil's Lab KiCad and component-selection videos, Rick Hartley's talks on grounding and return paths, the gate driver and MCU datasheets' layout guidelines, TI's "MOSFET power losses" and bootstrap application notes, *The Art of Electronics* (reference, not cover to cover).
 
 ### M3 — Firmware on the dev kit (Nov 17–27, 6 sessions, ~12 h, while boards ship)
@@ -190,7 +192,7 @@ Everything that needs the bench happens here. The finals Sundays (Dec 13, 20) ar
 
 - **Done when (Dec 10, Dec 22 at the latest):** every row of the bring-up plan has a measured value beside the expected one; the motor is under stable closed-loop position and velocity control and holds them when you push on the disc; the hardware trip is verified; a written list of rev B changes exists.
 - **If the boards arrive late or a board is dead:** keep the bench sessions for whatever board works, and pack the dev kit as the travel fallback so the firmware work in M5 still happens.
-- **Travel checklist:** the board on the supply you'll take (12–24 V adapter or a USB-C PD trigger with an inline fuse), the motor with its disc (and the dyno motor if it fits), the debug probe (the Nucleo's ST-Link), USB cables, a spare assembled board, the dev kit as backup, and firmware that comes up in a safe state if anything goes wrong. The Analog Discovery 3 fits in a laptop bag if you decide to take one instrument after all.
+- **Travel checklist:** the board on the supply you'll take (the fixed ~24 V adapter (23–24 V); the board is designed for a fixed 24 V input, not 12–24 V, because the 12 V gate-drive buck needs at least ~15 V in. A 20 V USB-C PD trigger with an inline fuse also works), the motor with its disc (and the dyno motor if it fits), the debug probe (the Nucleo's ST-Link), USB cables, a spare assembled board, the dev kit as backup, and firmware that comes up in a safe state if anything goes wrong. The Analog Discovery 3 fits in a laptop bag if you decide to take one instrument after all.
 
 ### M5 — Refinements while travelling (late Dec–Jan, ~12 h, no lab equipment)
 
@@ -210,7 +212,7 @@ Everything here uses only the board's own sensors (phase current, bus voltage, N
 
 ## If time slips
 
-Use the Sunday block first. The November 13 order and the December 10 bring-up are the dates that matter; everything else can bend. Cut in this order:
+Use the Sunday block first. The November 27 order and the December 10 bring-up are the dates that matter; everything else can bend. Cut in this order:
 
 1. Discrete MOSFETs: switch to an integrated-FET driver at the Nov 3 checkpoint to shorten layout and lower bring-up risk.
 2. FOC before travel: six-step closed-loop control is enough to call the board working on Dec 10.
@@ -231,7 +233,7 @@ Order the motor and dev kit by October 20 so M3 isn't waiting on them. Exact par
 | Motor: **DFRobot FIT1036** (decided Oct 14), ×2 | M3 | 4015 gimbal motor, 61 KV, AS5600 encoder built in (I²C), no driver included; $29.90, in stock at Mouser. Measure phase-to-phase resistance on arrival (listing gives 4.8 Ω and 7.2 Ω) |
 | Second motor for the dyno | M3 | Optional; the same model, run from the dev kit as the load |
 | 3D-printed inertia disc, motor mount, shaft coupler | M3 | Disc: 60 mm diameter (30 mm radius), about 10 mm thick, knurled rim for grip, with a ring of holes at about 25 mm radius for bolting on nuts or washers to change the inertia. In PLA it weighs about 35 g, so J ≈ 1.6 × 10⁻⁵ kg·m². This is the only mechanical work on the rig |
-| 12–24 V supply | M3 | Rated above the motor's peak current |
+| 24 V supply (fixed ~23–24 V adapter; board is not designed for 12 V input) | M3 | Rated above the motor's peak current |
 | Analog Discovery 3 | M2 | Scope, logic analyzer and signal generator; works on macOS. Useful for Phase A experiments |
 | Current-limited bench supply and multimeter | M4 | For safe first power-up |
-| Custom PCBs with assembly | M4 | 4-layer, at least 3 assembled, ordered by Nov 13 with express shipping |
+| Custom PCBs with assembly | M4 | 4-layer, at least 3 assembled, ordered by Nov 27 with express shipping |
