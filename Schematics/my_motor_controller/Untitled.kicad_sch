@@ -11,9 +11,205 @@
 		(company "Shayan Ajmal")
 	)
 	(lib_symbols)
+	(junction
+		(at 127 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32c7a002-7b02-4396-ab8c-f48e8ecfbdf3")
+	)
+	(wire
+		(pts
+			(xy 142.24 81.28) (xy 175.26 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1eabb906-6c44-4f1b-a9c8-960c5ef6df1e")
+	)
+	(wire
+		(pts
+			(xy 142.24 86.36) (xy 175.26 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e0b4315-f3cb-4335-82b0-792bebaa911d")
+	)
+	(wire
+		(pts
+			(xy 142.24 88.9) (xy 175.26 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "326fe3a8-53c5-4285-9819-9b9445de2c88")
+	)
+	(wire
+		(pts
+			(xy 142.24 93.98) (xy 175.26 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "342f6b06-24f3-4377-9692-e3aa67037915")
+	)
+	(wire
+		(pts
+			(xy 73.66 50.8) (xy 175.26 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bbbd285-1f34-408d-a7cb-8328ab3de027")
+	)
+	(wire
+		(pts
+			(xy 142.24 83.82) (xy 175.26 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62519f6b-e8d8-40e4-9232-f4c214d014dc")
+	)
+	(wire
+		(pts
+			(xy 142.24 73.66) (xy 175.26 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c9dacf0-eadb-4774-9f1c-a21931737fa2")
+	)
+	(wire
+		(pts
+			(xy 142.24 91.44) (xy 175.26 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ecdcaab-b918-46bf-af91-537b86194b45")
+	)
+	(wire
+		(pts
+			(xy 142.24 99.06) (xy 175.26 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7582ee76-d6bf-4a21-a708-98cb9a5f2d3d")
+	)
+	(wire
+		(pts
+			(xy 73.66 66.04) (xy 111.76 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a22ca3d-7acc-4c7f-9117-a3e395b6d9b9")
+	)
+	(wire
+		(pts
+			(xy 73.66 53.34) (xy 127 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "893a52c2-7df8-4d74-9b85-2d2244eb66d5")
+	)
+	(wire
+		(pts
+			(xy 142.24 68.58) (xy 175.26 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a71895c-cd3e-49df-9f88-95272b629be9")
+	)
+	(wire
+		(pts
+			(xy 127 53.34) (xy 127 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af4f225a-ab51-4a38-a934-d194a07634c5")
+	)
+	(wire
+		(pts
+			(xy 73.66 63.5) (xy 111.76 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd6dd4ad-4d80-4c6d-875e-dd34430f5162")
+	)
+	(wire
+		(pts
+			(xy 127 53.34) (xy 175.26 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bec0cebe-60a1-4a6c-95d6-b62b28e10fb0")
+	)
+	(wire
+		(pts
+			(xy 142.24 71.12) (xy 175.26 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c591ef6a-4eca-4678-9f01-def4da0f85d5")
+	)
+	(wire
+		(pts
+			(xy 142.24 63.5) (xy 175.26 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dec800cd-d6e6-4367-a260-bd186d1e62f8")
+	)
+	(wire
+		(pts
+			(xy 142.24 76.2) (xy 175.26 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec77c06e-91ec-4f72-9347-67dfdfe41a01")
+	)
+	(wire
+		(pts
+			(xy 142.24 66.04) (xy 175.26 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2380177-53f0-4ad6-94ad-083c173e2c60")
+	)
 	(sheet
-		(at 90.17 41.91)
-		(size 20.32 8.89)
+		(at 175.26 45.72)
+		(size 30.48 58.42)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -28,7 +224,7 @@
 		)
 		(uuid "1b2099fd-7304-4dd4-a2bc-064fa887adba")
 		(property "Sheetname" "motor_driver"
-			(at 90.17 41.1984 0)
+			(at 175.26 45.0084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39,7 +235,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 90.17 51.3846 0)
+			(at 175.26 104.725 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -47,6 +243,156 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "+12V" input
+			(at 175.26 50.8 180)
+			(uuid "79f929d5-dfbe-4a6a-a393-bc01ac1ac001")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+24V" input
+			(at 175.26 53.34 180)
+			(uuid "159f4466-7dd2-476f-9e30-e1dc5a5a04fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM_HSA" input
+			(at 175.26 63.5 180)
+			(uuid "c946f02a-5883-475c-8406-569b748c4bdc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM_HSB" input
+			(at 175.26 66.04 180)
+			(uuid "a916f6d2-3f4c-44e3-b736-793459e7cc18")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM_HSC" input
+			(at 175.26 68.58 180)
+			(uuid "d4665032-9857-43f3-b76f-09327446a597")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM_LSA" input
+			(at 175.26 71.12 180)
+			(uuid "f7a3036a-5356-4b8e-abf6-c90969c5c514")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM_LSB" input
+			(at 175.26 73.66 180)
+			(uuid "e97744c6-8d72-4777-a59d-09fa1f819780")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM_LSC" input
+			(at 175.26 76.2 180)
+			(uuid "da2407de-bd3a-4237-936a-97674f507fa1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "INA+" output
+			(at 175.26 81.28 180)
+			(uuid "f2245bc9-a571-4000-9c58-9fda3f44a36b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "INA-" output
+			(at 175.26 83.82 180)
+			(uuid "a4e3228c-9eba-4911-9a8b-9ed931dde8e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "INB+" output
+			(at 175.26 86.36 180)
+			(uuid "2066a609-7edd-4f9a-b9a8-694559fb3f07")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "INB-" output
+			(at 175.26 88.9 180)
+			(uuid "84dbcc55-3acd-4701-b62e-8a32b46f6d88")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "INC+" output
+			(at 175.26 91.44 180)
+			(uuid "d03ab075-2e64-48e5-b38e-7ca1bcff1d8a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "INC-" output
+			(at 175.26 93.98 180)
+			(uuid "35558652-476a-46c9-b1df-d4898850f9d2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3.3VA" input
+			(at 175.26 99.06 180)
+			(uuid "1549008b-dd01-4e9f-af37-d8b2057015fc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -58,8 +404,8 @@
 		)
 	)
 	(sheet
-		(at 116.84 39.37)
-		(size 19.05 53.34)
+		(at 111.76 58.42)
+		(size 30.48 45.72)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -74,7 +420,7 @@
 		)
 		(uuid "32364cb6-c8e7-4976-a5e5-64ef5358d314")
 		(property "Sheetname" "MCU"
-			(at 116.84 38.6584 0)
+			(at 111.76 57.7084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -85,7 +431,7 @@
 			)
 		)
 		(property "Sheetfile" "MCU.kicad_sch"
-			(at 116.84 93.2946 0)
+			(at 111.76 104.725 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -93,6 +439,166 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "+3.3V" input
+			(at 111.76 63.5 180)
+			(uuid "91208a45-f8a2-4f3b-9685-858b582a4d5f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EFUSE_FLT" input
+			(at 111.76 66.04 180)
+			(uuid "ef8f2a06-293b-4c60-965e-196a0aa2737f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VBATT" input
+			(at 127 58.42 90)
+			(uuid "a28c744e-56a4-43ea-92c6-3b8dcd58725e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PWM_HSA" output
+			(at 142.24 63.5 0)
+			(uuid "358cdc85-b9ae-4862-84f8-500a01bc3549")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PWM_HSB" output
+			(at 142.24 66.04 0)
+			(uuid "65114c2b-9d99-4e2c-be33-185e95b49361")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PWM_HSC" output
+			(at 142.24 68.58 0)
+			(uuid "3a3b4cea-e3e7-4390-bb6b-527d5903b2dc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PWM_LSA" output
+			(at 142.24 71.12 0)
+			(uuid "fa67c786-66e6-4eec-9702-0d8f443c8e35")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PWM_LSB" output
+			(at 142.24 73.66 0)
+			(uuid "32d35ee2-b8ea-4a3d-9058-ceae159f060c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PWM_LSC" output
+			(at 142.24 76.2 0)
+			(uuid "d1cdd1d6-6f69-4e39-ba93-e716f670903a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "INA+" input
+			(at 142.24 81.28 0)
+			(uuid "530394c8-db7e-45d3-af16-3c1e815747b0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "INA-" input
+			(at 142.24 83.82 0)
+			(uuid "1206ddab-0f6f-46bb-a3ea-b037ae24d43c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "INB+" input
+			(at 142.24 86.36 0)
+			(uuid "633b2fff-dc02-4253-a713-0ba9cf039704")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "INB-" input
+			(at 142.24 88.9 0)
+			(uuid "43866636-cdca-4fbf-88fc-feb6aca9c599")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "INC+" input
+			(at 142.24 91.44 0)
+			(uuid "ea19353d-88d2-4af2-a664-868e9a6cdf71")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "INC-" input
+			(at 142.24 93.98 0)
+			(uuid "56440a5a-1175-4784-9359-9ee2da545c1a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+3.3VA" output
+			(at 142.24 99.06 0)
+			(uuid "66c5f6c9-f573-45eb-852e-a47176f091a4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -104,8 +610,8 @@
 		)
 	)
 	(sheet
-		(at 68.58 48.26)
-		(size 12.7 20.32)
+		(at 45.72 45.72)
+		(size 27.94 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -120,7 +626,7 @@
 		)
 		(uuid "5372bc34-6923-478a-80d3-286d4f023243")
 		(property "Sheetname" "Power"
-			(at 68.58 47.5484 0)
+			(at 45.72 45.0084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -131,7 +637,7 @@
 			)
 		)
 		(property "Sheetfile" "power_rails.kicad_sch"
-			(at 68.58 69.1646 0)
+			(at 45.72 71.7046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -139,6 +645,46 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "+12V" output
+			(at 73.66 50.8 0)
+			(uuid "32635591-3ecc-42ad-80ec-a53adadc0087")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VBATT" output
+			(at 73.66 53.34 0)
+			(uuid "3e358d5c-71ff-4d53-8020-c202a68a31bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+3.3V" output
+			(at 73.66 63.5 0)
+			(uuid "1f6404bf-1703-4349-a1cb-219e43d38fa7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "EFUSE_FLT" output
+			(at 73.66 66.04 0)
+			(uuid "6540d18d-5bf9-4359-adb4-08e8dcfeb2da")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

@@ -430,7 +430,7 @@
         "uuid": "ff3f6c56-af5f-41ca-b3f6-fd555f00a2a6"
       }
     ],
-    "used_designators": "#PWR1-49,A_HS1-2,A_LS1-2,Bootloader_SW1,C1-74,D1-5,FB1-2,J1,L1-4,M1,Q1-6,R1-37,SW1,U1-6",
+    "used_designators": "#PWR1-52,A_HS1-2,A_LS1-2,Bootloader_SW1,C1-86,C_LS1,D1-5,FB1-2,J1-6,L1-4,M1,Q1-6,R1-53,SW1,U1-6",
     "variants": []
   },
   "sheets": [
