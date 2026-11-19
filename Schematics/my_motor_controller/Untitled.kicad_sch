@@ -416,7 +416,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0)
+			(color 255 255 194 1)
 		)
 		(uuid "32364cb6-c8e7-4976-a5e5-64ef5358d314")
 		(property "Sheetname" "MCU"
