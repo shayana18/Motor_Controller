@@ -2,6 +2,9 @@
 
 Shared list for every thread. Add new items under the right section, tick items off with `[x]`, and keep the "Why" short. Pin and register names are for the STM32G431CBT6 (LQFP48), RM0440 Rev 9.
 
+## Startup (DECIDED Nov 18)
+- [ ] Own startup code from scratch, following the Embedonomicon ch. 1-5 (no cortex-m-rt): linker script, vector table, reset handler. Prove it in QEMU + GDB, then port to the G431 (memory map from RM0440, vector table size, FPU on via CPACR). About 1 week of evenings, then drivers.
+
 ## Clock
 - [x] SYSCLK 170 MHz (HSI16 /4 x85 /2), set in .ioc Nov 14.
 
